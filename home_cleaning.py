@@ -13,12 +13,10 @@ class JunkItem:
 class JunkRepository(ABC):
     @abstractmethod
     def save(self, items: list[JunkItem]) -> None:
-        """Зберігає список предметів у сховище."""
         pass
 
     @abstractmethod
     def load(self) -> list[JunkItem]:
-        """Завантажує та повертає список предметів зі сховища."""
         pass
 
 
