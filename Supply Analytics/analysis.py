@@ -34,7 +34,6 @@ print(top_three)
 print("-" * 44)
 
 with open("report.txt", "w", encoding="utf-8") as f:
-    # write() — записує рядок тексту у файл.
     f.write(f"Середня ціна препаратів: {mean_price:.2f}\n")
     f.write(f"Медіана кількості: {median_quantity:.1f}\n")
     f.write(f"Стандартне відхилення ціни: {std_price:.2f}\n")
